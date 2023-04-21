@@ -29,11 +29,6 @@
 
         {% for tag in site.tags %}
         <a class="sidebar-nav-item active" href="{{ tag | absolute_url }}">{{ tag }}</a>
-        <ul>
-            {% for post in tag[1] %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
         {% endfor %}
 
     </nav>
