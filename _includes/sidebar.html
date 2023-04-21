@@ -30,7 +30,7 @@
         {% endif %}
         {% endfor %}
 
-        <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+        <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     </nav>
 
 
@@ -39,7 +39,7 @@
             <p>Tags</p>
         </div>
         {% for tag in site.tags %}
-        <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">{{ tag[0] }}</a>
+        <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip"># {{ tag[0] }}</a>
         {% endfor %}
     </nav>
 
