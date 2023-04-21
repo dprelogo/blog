@@ -1,7 +1,7 @@
 # Setup
 title:               David's blog
-tagline:             'Who knows'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+tagline:             'Who knows.'
+description:         'My blog.'
 url:                 https://dprelogo.github.io
 baseurl:             '/blog'
 paginate:            5
