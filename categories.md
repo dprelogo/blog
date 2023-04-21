@@ -7,7 +7,7 @@ title: Categories
   <h3>{{ cat[0] }}</h3>
   <ul>
     {% for post in cat[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
