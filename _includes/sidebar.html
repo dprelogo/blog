@@ -27,6 +27,7 @@
         {% endif %}
         {% endfor %}
 
+        <a class="sidebar-checkbox" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Tags</a>
         {% for tag in site.tags %}
         <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">{{ tag[0] }}</a>
         {% endfor %}
