@@ -4,9 +4,12 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
+
+
     <div class="sidebar-item">
         <p>{{ site.description }}</p>
     </div>
+
 
     <nav class="sidebar-nav">
         <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}"
@@ -27,14 +30,17 @@
         {% endif %}
         {% endfor %}
 
-        <a class="sidebar-checkbox" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Tags</a>
+        <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    </nav>
+
+
+    <nav class="sidebar-nav">
+        <div class="sidebar-item">
+            <p>Tags</p>
+        </div>
         {% for tag in site.tags %}
         <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">{{ tag[0] }}</a>
         {% endfor %}
-
-        <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-        <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-        <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
     <div class="sidebar-item">
