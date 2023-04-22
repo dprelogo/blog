@@ -39,18 +39,18 @@
             <p>Categories</p>
         </div>
         {% for cat in site.categories %}
-        <a class="sidebar-nav-subitem" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">{{ cat[0] }}</a>
+        <a class="sidebar-nav-item" href="{{ absolute_url }}/categories/{{ cat[0] }}/" style="padding-left: 5rem">{{
+            cat[0] }}</a>
         {% endfor %}
     </nav>
 
 
-    <nav class="sidebar-nav">
+    <nav class=" sidebar-nav">
         <div class="sidebar-item">
             <p>Tags</p>
         </div>
         {% for tag in site.tags %}
-        <a class="sidebar-nav-item"
-            href="{{ site.github.repo }}/archive/v{{ site.version }}.zip"><em>#{{tag[0]}}</em></a>
+        <a class="sidebar-nav-item" href="{{ absolute_url }}/categories/{{ tag[0] }}/"><em>#{{tag[0]}}</em></a>
         {% endfor %}
     </nav>
 
