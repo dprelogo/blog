@@ -23,7 +23,7 @@ google_analytics_id: #UA-XXXX-Y
 excerpt_separator: <!--more-->
 # include: ['_categories', '_tags']
 
-collections:
-  tags:
-    output: true
-    permalink: tags/:path/
+# collections:
+#   tags:
+#     output: true
+#     permalink: tags/:path/
