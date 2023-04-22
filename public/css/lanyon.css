@@ -213,7 +213,7 @@ a.sidebar-nav-item:focus {
 
 .sidebar-nav-subitem {
     display: block;
-    padding: 1.5rem 2rem;
+    padding: 3.5rem 0.3rem;
     border-top: 1px solid rgba(200, 200, 200, .1);
 }
 
@@ -231,6 +231,11 @@ a.sidebar-nav-subitem:focus {
     }
 
     .sidebar-nav-item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .sidebar-nav-subitem {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
