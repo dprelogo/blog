@@ -34,14 +34,14 @@
     </nav>
 
 
-    <!-- <nav class="sidebar-nav">
+    <nav class="sidebar-nav">
         <div class="sidebar-item">
             <p>Categories</p>
         </div>
         {% for cat in site.categories %}
         <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/{{ cat }}/">{{ cat[0] }}</a>
         {% endfor %}
-    </nav> -->
+    </nav>
 
 
     <nav class="sidebar-nav">
@@ -49,8 +49,7 @@
             <p>Tags</p>
         </div>
         {% for tag in site.tags %}
-        {% assign tag_slug = tag | slugify: "raw" %}
-        <a class="sidebar-nav-item" href="{{ site.baseurl }}/tags/{{ tag_slug }}/">#{{ tag[0] }}</a>
+        <a class="sidebar-nav-item" href="{{ site.baseurl }}/tags/{{ tag }}/">#{{ tag[0] }}</a>
         {% endfor %}
     </nav>
 
