@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="snippets">
+    <h1 class="snippets-heading">Category: "{{ page.category-name }}"</h1>
+
+    {% for post in site.posts %}
+    {% if post.category == page.category-name %}
+    {% include snippet.html %}
+    {% endif %}
+    {% endfor %}
+</div>
