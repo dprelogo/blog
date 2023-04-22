@@ -39,7 +39,7 @@
             <p>Categories</p>
         </div>
         {% for cat in site.categories %}
-        <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/{{ cat }}/">{{ cat[0] }}</a>
+        <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/{{ cat }}/">{{ cat|first }}</a>
         {% endfor %}
     </nav>
 
@@ -49,7 +49,7 @@
             <p>Tags</p>
         </div>
         {% for tag in site.tags %}
-        <a class="sidebar-nav-item" href="{{ site.baseurl }}/tags/{{ tag }}/">#{{ tag[0] }}</a>
+        <a class="sidebar-nav-item" href="{{ site.baseurl }}/tags/{{ tag }}/">#{{ tag|first }}</a>
         {% endfor %}
     </nav>
 
