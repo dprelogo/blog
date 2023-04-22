@@ -39,7 +39,7 @@
             <p>Categories</p>
         </div>
         {% for cat in site.categories %}
-        <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">{{ cat[0] }}</a>
+        <a class="sidebar-nav-subitem" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">{{ cat[0] }}</a>
         {% endfor %}
     </nav>
 
@@ -49,7 +49,8 @@
             <p>Tags</p>
         </div>
         {% for tag in site.tags %}
-        <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">#{{tag[0]}}</a>
+        <a class="sidebar-nav-subitem"
+            href="{{ site.github.repo }}/archive/v{{ site.version }}.zip"><em>#{{tag[0]}}</em></a>
         {% endfor %}
     </nav>
 
