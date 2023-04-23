@@ -167,8 +167,7 @@ abbr[title] {
 
 /* Code */
 code,
-pre,
-scode {
+pre {
     font-family: Menlo, Monaco, "Courier New", monospace;
 }
 

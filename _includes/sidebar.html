@@ -52,7 +52,7 @@
         {% for tag in site.tags %}
         <a class="sidebar-nav-item" href="{{ absolute_url }}/tags/{{ tag[0] }}/" style="padding-left:
             2rem">
-            <scode>#{{tag[0]}}</scode>
+            <code style="background-color:transparent">#{{tag[0]}}</code>
         </a>
         {% endfor %}
     </nav>

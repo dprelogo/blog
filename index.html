@@ -17,7 +17,7 @@ title: Home
             {% if post.tags.size > 0 %}
             {% for tag in post.tags %}
             <a href="{{ absolute_url }}/tags/{{ tag }}/">
-                <scode>#{{ tag }}</scode>
+                <code>#{{ tag }}</code>
             </a>
             {% endfor %}
             {% endif %}
