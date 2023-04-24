@@ -26,3 +26,10 @@ excerpt_separator: <!--more-->
 #   tags:
 #     output: true
 #     permalink: tags/:path/
+
+collections:
+  tag:
+    output: true
+  cat:
+    output: true
+
