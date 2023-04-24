@@ -17,7 +17,7 @@ title: TagHome
             {{ post.date | date_to_string }}
             {% if post.tags.size > 0 %}
             {% for tag in post.tags %}
-            <a href="{{ absolute_url }}/tags/{{ tag }}/">
+            <a href="{{ site.baseurl | absolute_url }}/tags/{{ tag }}/">
                 <code style="font-size: 85%">#{{ tag }}</code>
             </a>
             {% endfor %}
