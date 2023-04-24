@@ -40,7 +40,7 @@
         </div>
         {% for cat in site.categories %}
         {% assign cat_link = site.baseurl | site.url | append: "/cat/" | append: cat[0] | append: "/" %}
-        <a class="sidebar-nav-item" href="{{ cat_link }}" style="padding-left: 2rem">{{
+        <a class="sidebar-nav-item" href="{{ cat_link }}" style="padding-left: 2rem; color:#008044">{{
             cat[0] }}</a>
         {% endfor %}
     </nav>
