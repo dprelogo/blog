@@ -39,7 +39,7 @@
             <p>Categories</p>
         </div>
         {% for cat in site.categories %}
-        {% assign cat_link = absolute_url | append: "/categories/" | append: cat[0] | append: "/" %}
+        {% assign cat_link = site.baseurl | site.url | append: "/categories/" | append: cat[0] | append: "/" %}
         <a class="sidebar-nav-item" href="{{ cat_link }}" style="padding-left: 2rem">{{
             cat[0] }}</a>
         {% endfor %}
@@ -51,7 +51,7 @@
             <p>Tags</p>
         </div>
         {% for tag in site.tags %}
-        {% assign tag_link = absolute_url | append: "/tags/" | append: cat[0] | append: "/" %}
+        {% assign tag_link = site.baseurl | site.url | append: "/tags/" | append: tag[0] | append: "/" %}
         <a class="sidebar-nav-item" href="{{ tag_link }}" style="padding-left: 2rem">
             <code style="background-color:transparent">#{{tag[0]}}</code>
         </a>
