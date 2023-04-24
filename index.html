@@ -6,7 +6,7 @@ title: Home
 <div class="posts">
     {% for post in paginator.posts %}
     <div class="post">
-        <h1 class="post-title" style="display: inline-block; text-align:left; width:70%;">
+        <h1 class="post-title" style="display: inline-block; text-align:left; width:80%;">
             <a href="{{ post.url | absolute_url }}">
                 {{ post.title }}
             </a>
@@ -14,9 +14,8 @@ title: Home
         {% if post.categories.size > 0 %}
         {% for cat in post.categories %}
         {% assign cat_link = absolute_url | append: site.baseurl | append: "/cat/" | append: cat | append: "/" %}
-        <h3 style="display: inline-block; text-align:right; width:29%;"><a href="{{ cat_link }}" style="color:#008044">
-                Category: {{
-                cat }}</a></h3>
+        <h3 style="display: inline-block; text-align:right; width:19%;"><a href="{{ cat_link }}" style="color:#008044">
+                {{ cat }}</a></h3>
         {% endfor %}
         {% endif%}
 

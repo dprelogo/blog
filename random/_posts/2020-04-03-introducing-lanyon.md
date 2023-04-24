@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Introducing Lanyon for the use in everyday life
 tags: ML intro
 ---
 
