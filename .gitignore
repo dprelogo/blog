@@ -45,3 +45,6 @@ bower_components
 #gems
 Gemfile
 Gemfile.lock
+
+# Claude
+CLAUDE.md

@@ -1,7 +1,7 @@
 # Setup
 title:               David's blog
-tagline:             'Is blogging still a thing?'
-description:         'The purpose of this blog is to appreciate the fact that life is short. The more I write, the more I think there has to be something better to do with my life right now.'
+tagline:             'yet another'
+description:         "The blog's purpose: life is short. The more you write, the more you think there has to be something better to do with your life."
 url:                 https://dprelogo.github.io
 baseurl:             '/blog'
 paginate:            5
@@ -32,4 +32,19 @@ collections:
     output: true
   cat:
     output: true
+
+# Giscus Comments Configuration
+# To enable comments, configure the following settings after setting up Giscus at https://giscus.app/
+giscus:
+  repo: ""                    # Your GitHub username/repository-name
+  repo_id: ""                 # Repository ID from giscus.app
+  category: ""                # Discussion category name
+  category_id: ""             # Category ID from giscus.app
+  mapping: "pathname"         # How to map pages to discussions
+  strict: "0"                 # Use strict title matching
+  reactions_enabled: "1"      # Enable reactions on main post
+  emit_metadata: "0"          # Emit discussion metadata
+  input_position: "bottom"    # Position of comment box
+  theme: "light"              # Comment theme
+  lang: "en"                  # Language
 
