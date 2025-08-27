@@ -1,7 +1,7 @@
 # Setup
 title:               David's blog
-tagline:             'Who knows.'
-description:         'My blog.'
+tagline:             'Is blogging still a thing?'
+description:         'The purpose of this blog is to appreciate the fact that life is short. The more I write, the more I think there has to be something better to do with my life right now.'
 url:                 https://dprelogo.github.io
 baseurl:             '/blog'
 paginate:            5
