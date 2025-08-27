@@ -34,17 +34,16 @@ collections:
     output: true
 
 # Giscus Comments Configuration
-# To enable comments, configure the following settings after setting up Giscus at https://giscus.app/
 giscus:
-  repo: ""                    # Your GitHub username/repository-name
-  repo_id: ""                 # Repository ID from giscus.app
-  category: ""                # Discussion category name
-  category_id: ""             # Category ID from giscus.app
-  mapping: "pathname"         # How to map pages to discussions
-  strict: "0"                 # Use strict title matching
-  reactions_enabled: "1"      # Enable reactions on main post
-  emit_metadata: "0"          # Emit discussion metadata
-  input_position: "bottom"    # Position of comment box
-  theme: "light"              # Comment theme
-  lang: "en"                  # Language
+  repo: "dprelogo/blog"
+  repo_id: "R_kgDOJZqSNw"
+  category: "Announcements"
+  category_id: "DIC_kwDOJZqSN84CurQm"
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "1"
+  input_position: "top"
+  theme: "light"
+  lang: "en"
 
